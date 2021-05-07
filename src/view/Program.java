@@ -65,6 +65,17 @@ public class Program {
 		newUNH.setAveragePrice(402.61);
 		
 		tickers.add(newUNH);
+		
+		Ticker newDIS = new Ticker();
+		
+		newDIS.setIdTicker("DIS");
+		newDIS.setSector("Communication Services");
+		newDIS.setIndustry("Entertainment");
+		newDIS.setRating(9);
+		newDIS.setCurrentPosition(0.52633000);
+		newDIS.setAveragePrice(180.02);
+		
+		tickers.add(newDIS);
 
 		for (Ticker ticker : tickers) {
 			System.out.println(ticker.toString());
