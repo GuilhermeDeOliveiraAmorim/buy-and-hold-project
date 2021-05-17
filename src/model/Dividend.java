@@ -1,10 +1,13 @@
 package model;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Dividend {
 	
 	private static Double dividendTax = 0.3;
+	
+	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	
 	private String idTicker;
 	private Date entryDate;
@@ -51,9 +54,11 @@ public class Dividend {
 	public void setDividendAmount(Double dividendAmount) {
 		this.dividendAmount = dividendAmount;
 	}
-	
-	public void updateDividendAmount() {
-		
+
+	@Override
+	public String toString() {
+		return "Dividend [idTicker=" + idTicker + ", entryDate=" + sdf.format(entryDate) + ", dividendAmount=" + dividendAmount
+				+ "]";
 	}
 	
 }
