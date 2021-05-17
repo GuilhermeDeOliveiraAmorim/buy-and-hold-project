@@ -2,33 +2,35 @@ package model;
 
 public class Ticker {
 	
-	private String idTicker;
+	private String ticker;
 	private String sector;
 	private String industry;
 	private Integer rating;
 	private Double currentPosition;
 	private Double averagePrice;
+	private Dividend totalDividendsReceived;
 	
-	public Ticker(String idTicker, String sector, String industry, Integer rating, Double currentPosition,
-			Double averagePrice) {
-		this.idTicker = idTicker;
+	public Ticker(String ticker, String sector, String industry, Integer rating, Double currentPosition,
+			Double averagePrice, Dividend totalDividendsReceived) {
+		this.ticker = ticker;
 		this.sector = sector;
 		this.industry = industry;
 		this.rating = rating;
 		this.currentPosition = currentPosition;
 		this.averagePrice = averagePrice;
+		this.totalDividendsReceived = totalDividendsReceived;
 	}
-	
+
 	public Ticker() {
 
 	}
-
-	public String getIdTicker() {
-		return idTicker;
+	
+	public String getTicker() {
+		return ticker;
 	}
 
-	public void setIdTicker(String idTicker) {
-		this.idTicker = idTicker;
+	public void setTicker(String ticker) {
+		this.ticker = ticker;
 	}
 
 	public String getSector() {
@@ -71,20 +73,46 @@ public class Ticker {
 		this.averagePrice = averagePrice;
 	}
 
+	public Dividend getTotalDividendsReceived() {
+		return totalDividendsReceived;
+	}
+
+	public void setTotalDividendsReceived(Dividend totalDividendsReceived) {
+		this.totalDividendsReceived = totalDividendsReceived;
+	}
+	
 	@Override
 	public String toString() {
-		return "Ticker [idTicker=" + idTicker + ", sector=" + sector + ", industry=" + industry + ", rating=" + rating
-				+ ", currentPosition=" + currentPosition + ", averagePrice=" + averagePrice + "]";
+		return "Ticker [ticker=" + ticker + ", sector=" + sector + ", industry=" + industry + ", rating=" + rating
+				+ ", currentPosition=" + currentPosition + ", averagePrice=" + averagePrice
+				+ ", totalDividendsReceived=" + totalDividendsReceived + "]";
 	}
-	
-	public void updateAveragePrice(Trade newTrade) {
-		double totalPurchased = newTrade.getAcquiredPosition() * newTrade.getPurchasePrice();
+
+	public void addStock(Trade trade) {
+		double totalPurchased = trade.getAcquiredPosition() * trade.getPurchasePrice();
 		double totalInPortfolio = this.getCurrentPosition() * this.getAveragePrice();
-		double totalCurrentPosition = this.getCurrentPosition() + newTrade.getAcquiredPosition();
-		double newAveragePrice = (totalPurchased + totalInPortfolio) / (newTrade.getAcquiredPosition() + this.getCurrentPosition());
+		double totalCurrentPosition = this.getCurrentPosition() + trade.getAcquiredPosition();
+		double newAveragePrice = (totalPurchased + totalInPortfolio) / (trade.getAcquiredPosition() + this.getCurrentPosition());
 		
-		this.setCurrentPosition(totalCurrentPosition);
-		this.setAveragePrice(newAveragePrice);
+		this.currentPosition = totalCurrentPosition;
+		this.averagePrice = newAveragePrice;
 	}
 	
+	public void delStock(Trade trade) {
+		double totalPurchased = trade.getAcquiredPosition() * trade.getPurchasePrice();
+		double totalInPortfolio = this.getCurrentPosition() * this.getAveragePrice();
+		double totalCurrentPosition = this.getCurrentPosition() + trade.getAcquiredPosition();
+		double newAveragePrice = (totalPurchased + totalInPortfolio) / (trade.getAcquiredPosition() + this.getCurrentPosition());
+		
+		this.currentPosition = totalCurrentPosition;
+		this.averagePrice = newAveragePrice;
+	}
+	
+	public void addTotalDividendsReceived(Dividend dividend) {
+		
+	}
+	
+	public void delTotalDividendsReceived(Dividend dividend) {
+		
+	}
 }

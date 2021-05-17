@@ -54,10 +54,6 @@ public class Dividend {
 	public void setDividendAmount(Double dividendAmount) {
 		this.dividendAmount = dividendAmount;
 	}
-	
-	public void updateDividendAmount() {
-		
-	}
 
 	@Override
 	public String toString() {

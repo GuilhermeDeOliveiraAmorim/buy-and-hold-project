@@ -10,12 +10,12 @@ public class Trade {
 	private Date datePurchase;
 	private Double brokerageFee;
 	
-	public Trade(Ticker ticker, Double purchasePrice, Double acquiredPosition, Date date, Double tax) {
+	public Trade(Ticker ticker, Double purchasePrice, Double acquiredPosition, Date date, Double brokerageFee) {
 		this.ticker = ticker;
 		this.purchasePrice = purchasePrice;
 		this.acquiredPosition = acquiredPosition;
 		this.datePurchase = date;
-		this.brokerageFee = tax;
+		this.brokerageFee = brokerageFee;
 	}
 	
 	public Trade() {
@@ -54,22 +54,22 @@ public class Trade {
 		this.datePurchase = date;
 	}
 
-	public Double getTax() {
+	public Double getBrokerageFee() {
 		return brokerageFee;
 	}
 
-	public void setTax(Double tax) {
-		this.brokerageFee = tax;
+	public void setBrokerageFee(Double brokerageFee) {
+		this.brokerageFee = brokerageFee;
 	}
 
 	@Override
 	public String toString() {
 		return "Trade ["
-				+ "ticker=" + ticker.getIdTicker()
+				+ "ticker=" + ticker.getTicker()
 				+ ", purchasePrice=" + purchasePrice
 				+ ", acquiredPosition=" + acquiredPosition
 				+ ", date=" + datePurchase
-				+ ", tax=" + brokerageFee
+				+ ", brokerageFee=" + brokerageFee
 				+ "]";
 	}
 
