@@ -7,15 +7,15 @@ public class Trade {
 	private Ticker ticker;
 	private Double purchasePrice;
 	private Double acquiredPosition;
-	private Date date;
-	private Double tax;
+	private Date datePurchase;
+	private Double brokerageFee;
 	
 	public Trade(Ticker ticker, Double purchasePrice, Double acquiredPosition, Date date, Double tax) {
 		this.ticker = ticker;
 		this.purchasePrice = purchasePrice;
 		this.acquiredPosition = acquiredPosition;
-		this.date = date;
-		this.tax = tax;
+		this.datePurchase = date;
+		this.brokerageFee = tax;
 	}
 	
 	public Trade() {
@@ -47,19 +47,19 @@ public class Trade {
 	}
 	
 	public Date getDate() {
-		return date;
+		return datePurchase;
 	}
 	
 	public void setDate(Date date) {
-		this.date = date;
+		this.datePurchase = date;
 	}
 
 	public Double getTax() {
-		return tax;
+		return brokerageFee;
 	}
 
 	public void setTax(Double tax) {
-		this.tax = tax;
+		this.brokerageFee = tax;
 	}
 
 	@Override
@@ -68,8 +68,8 @@ public class Trade {
 				+ "ticker=" + ticker.getIdTicker()
 				+ ", purchasePrice=" + purchasePrice
 				+ ", acquiredPosition=" + acquiredPosition
-				+ ", date=" + date
-				+ ", tax=" + tax
+				+ ", date=" + datePurchase
+				+ ", tax=" + brokerageFee
 				+ "]";
 	}
 

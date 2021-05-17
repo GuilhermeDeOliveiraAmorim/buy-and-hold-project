@@ -80,6 +80,21 @@ public class Program {
 		for (Ticker ticker : tickers) {
 			System.out.println(ticker.toString());
 		}
+		
+		Ticker newwDIS = new Ticker();
+		
+		newwDIS.setIdTicker("DIS");
+		newwDIS.setSector("Communication Services");
+		newwDIS.setIndustry("Entertainment");
+		newwDIS.setRating(9);
+		newwDIS.setCurrentPosition(0.42633000);
+		newwDIS.setAveragePrice(150.02);
+		
+		tickers.add(newwDIS);
+		
+		for (Ticker ticker : tickers) {
+			System.out.println(ticker.toString());
+		}
 	}
 
 }
