@@ -1,50 +1,31 @@
 package model;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Dividend {
+public class Dividend extends Ticker {
 	
 	private static Double dividendTax = 0.3;
 	
-	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-	
-	private String idTicker;
-	private Date entryDate;
+	private Date receiptDate;
 	private Double dividendAmount;
 	
-	public Dividend(String idTicker, Date entryDate, Double dividendAmount) {
-		this.idTicker = idTicker;
-		this.entryDate = entryDate;
+	public Dividend(String ticker, String sector, String industry, Integer rating, Double currentPosition,
+			Double averagePrice, Double totalDividendsReceived, Date receiptDate, Double dividendAmount) {
+		super(ticker, sector, industry, rating, currentPosition, averagePrice, totalDividendsReceived);
+		this.receiptDate = receiptDate;
 		this.dividendAmount = dividendAmount;
 	}
-	
+
 	public Dividend() {
 		
 	}
 
-	public static Double getDividendTax() {
-		return dividendTax;
+	public Date getReceiptDate() {
+		return receiptDate;
 	}
 
-	public static void setDividendTax(Double dividendTax) {
-		Dividend.dividendTax = dividendTax;
-	}
-
-	public String getIdTicker() {
-		return idTicker;
-	}
-
-	public void setIdTicker(String idTicker) {
-		this.idTicker = idTicker;
-	}
-
-	public Date getEntryDate() {
-		return entryDate;
-	}
-
-	public void setEntryDate(Date entryDate) {
-		this.entryDate = entryDate;
+	public void setReceiptDate(Date receiptDate) {
+		this.receiptDate = receiptDate;
 	}
 
 	public Double getDividendAmount() {
@@ -52,13 +33,13 @@ public class Dividend {
 	}
 
 	public void setDividendAmount(Double dividendAmount) {
-		this.dividendAmount = dividendAmount;
+		double cut = dividendAmount * dividendTax;
+		this.dividendAmount = dividendAmount - cut;
 	}
 
 	@Override
 	public String toString() {
-		return "Dividend [idTicker=" + idTicker + ", entryDate=" + sdf.format(entryDate) + ", dividendAmount=" + dividendAmount
-				+ "]";
+		return "Dividend [receiptDate=" + receiptDate + ", dividendAmount=" + dividendAmount + "]";
 	}
 	
 }
