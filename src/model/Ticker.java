@@ -6,12 +6,12 @@ public class Ticker {
 	private String sector;
 	private String industry;
 	private Integer rating;
-	private Double currentPosition;
-	private Double averagePrice;
-	private Dividend totalDividendsReceived;
+	private Double currentPosition = 0.00;
+	private Double averagePrice = 0.00;
+	private Double totalDividendsReceived = 0.00;
 	
 	public Ticker(String ticker, String sector, String industry, Integer rating, Double currentPosition,
-			Double averagePrice, Dividend totalDividendsReceived) {
+			Double averagePrice, Double totalDividendsReceived) {
 		this.ticker = ticker;
 		this.sector = sector;
 		this.industry = industry;
@@ -61,24 +61,12 @@ public class Ticker {
 		return currentPosition;
 	}
 
-	public void setCurrentPosition(Double currentPosition) {
-		this.currentPosition = currentPosition;
-	}
-
 	public Double getAveragePrice() {
 		return averagePrice;
 	}
 
-	public void setAveragePrice(Double averagePrice) {
-		this.averagePrice = averagePrice;
-	}
-
-	public Dividend getTotalDividendsReceived() {
+	public Double getTotalDividendsReceived() {
 		return totalDividendsReceived;
-	}
-
-	public void setTotalDividendsReceived(Dividend totalDividendsReceived) {
-		this.totalDividendsReceived = totalDividendsReceived;
 	}
 	
 	@Override
@@ -88,31 +76,51 @@ public class Ticker {
 				+ ", totalDividendsReceived=" + totalDividendsReceived + "]";
 	}
 
-	public void addStock(Trade trade) {
-		double totalPurchased = trade.getAcquiredPosition() * trade.getPurchasePrice();
-		double totalInPortfolio = this.getCurrentPosition() * this.getAveragePrice();
-		double totalCurrentPosition = this.getCurrentPosition() + trade.getAcquiredPosition();
-		double newAveragePrice = (totalPurchased + totalInPortfolio) / (trade.getAcquiredPosition() + this.getCurrentPosition());
+	public void buyStock(Trade trade) {
+		double oldPosition = this.getCurrentPosition();
+		double oldAverage = this.getAveragePrice();
+		double amountSpent = (oldPosition * oldAverage);
 		
-		this.currentPosition = totalCurrentPosition;
-		this.averagePrice = newAveragePrice;
+		double newPosition = trade.getAcquiredPosition();
+		double newAverage = trade.getPurchasePrice();
+		double newAmountSpent = newPosition * newAverage;
+		
+		double position = oldPosition + newPosition;
+		double average = (amountSpent + newAmountSpent) / position;
+
+		this.averagePrice = average;
+		this.currentPosition = position;
 	}
 	
-	public void delStock(Trade trade) {
-		double totalPurchased = trade.getAcquiredPosition() * trade.getPurchasePrice();
-		double totalInPortfolio = this.getCurrentPosition() * this.getAveragePrice();
-		double totalCurrentPosition = this.getCurrentPosition() + trade.getAcquiredPosition();
-		double newAveragePrice = (totalPurchased + totalInPortfolio) / (trade.getAcquiredPosition() + this.getCurrentPosition());
+	public void sellStock(Trade trade) {
+		double oldPosition = this.getCurrentPosition();
+		double oldAverage = this.getAveragePrice();
+		double amountSpent = oldPosition * oldAverage;
 		
-		this.currentPosition = totalCurrentPosition;
-		this.averagePrice = newAveragePrice;
+		double shortPosition = trade.getAcquiredPosition();
+		double shortAverage = trade.getPurchasePrice();
+		double shortAmountSold = shortPosition * shortAverage;
+		
+		double position = oldPosition - shortPosition;
+		double average = (amountSpent - shortAmountSold) / position;
+		
+		this.averagePrice = average;
+		this.currentPosition = position;
 	}
 	
-	public void addTotalDividendsReceived(Dividend dividend) {
+	public void addDividend(Dividend dividend) {
+		double oldDividends = this.getTotalDividendsReceived();
+		double oldPosition = this.getCurrentPosition();
+		
+		double dividendAmount = dividend.getDividendAmount();
+		double updateDividends = (oldPosition * dividendAmount) + oldDividends;
+		
+		this.totalDividendsReceived = updateDividends;
+		this.averagePrice = ((oldPosition * this.averagePrice) - this.totalDividendsReceived)/ oldPosition;
+	}
+	
+	public void delDividend(Dividend dividend) {
 		
 	}
 	
-	public void delTotalDividendsReceived(Dividend dividend) {
-		
-	}
 }
