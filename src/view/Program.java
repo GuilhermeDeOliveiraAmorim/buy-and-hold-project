@@ -1,65 +1,68 @@
 package view;
 
+import java.io.IOException;
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 
-import model.Dividend;
-import model.Ticker;
-import model.Trade;
+import model.avenue.AvenueBuy;
+import model.entities.Trade;
 
 public class Program {
 
-	public static void main(String[] args) throws ParseException {
+	public static void main(String[] args) throws ParseException, IOException {
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm");
 
-		Ticker JPM = new Ticker();
-		Trade trade = new Trade();
-		Dividend dividend = new Dividend();
+		AvenueBuy ab = new AvenueBuy();
 		
-		JPM.setTicker("JPM");
-		JPM.setSector("Financial Services");
-		JPM.setIndustry("Banks - Diversified");
-		JPM.setRating(11);
+		ArrayList<String[]> list = ab.getAvenueBuy();
 		
-		System.out.println(JPM.toString());
+		ArrayList<Trade> trades = new ArrayList<Trade>();
 		
-		trade.setAcquiredPosition(10.00);
-		trade.setPurchasePrice(100.00);
+		for (String[] strings : list) {
+			
+			Trade trade = new Trade();
+			
+			trade.setDatePurchase(sdf.parse(strings[0]));
+			trade.setTicker(strings[2]);
+			trade.setAcquiredPosition(Double.parseDouble(strings[1]));
+			trade.setPurchasePrice(Double.parseDouble(strings[3]));
+			trade.setOperation(strings[4]);
+			
+			trades.add(trade);
+		}
 		
-		JPM.buyStock(trade);
+		for (Trade trade : trades) {
+			System.out.println(trade.toString());
+		}
+
+	}
+	
+	public static void sellLine(String line) {
 		
-		System.out.println(JPM.toString());
+		String sell = "";
 		
-		dividend.setDividendAmount(3.00);
+		String dateSell = "";
 		
-		JPM.addDividend(dividend);
-		
-		System.out.println(JPM.toString());
-		
-		dividend.setDividendAmount(5.00);
-		
-		JPM.addDividend(dividend);
-		
-		System.out.println(JPM.toString());
-		
-		trade.setAcquiredPosition(10.00);
-		trade.setPurchasePrice(100.00);
-		
-		JPM.buyStock(trade);
-		
-		System.out.println(JPM.toString());
-		
-		dividend.setDividendAmount(15.00);
-		
-		JPM.addDividend(dividend);
-		
-		System.out.println(JPM.toString());
-		
-		trade.setAcquiredPosition(50.00);
-		trade.setPurchasePrice(200.00);
-		
-		JPM.buyStock(trade);
-		
-		System.out.println(JPM.toString());
-		
+		if(line.length() > 10) {
+			
+			if(line.contains("Venda de")) {
+				
+				String[] splitLineBuy = line.split("	");
+				
+				String[] splitLineBuyInfo = splitLineBuy[2].split(" ");
+				
+				dateSell = splitLineBuy[1] + " " + splitLineBuy[0];
+			
+				sell = dateSell + " " + splitLineBuyInfo[2] + " " + splitLineBuyInfo[3] + " " + splitLineBuyInfo[6];
+				
+				System.out.println(sell);
+				
+			}
+			
+		}
+
 	}
 
 }
