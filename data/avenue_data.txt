@@ -1,0 +1,201 @@
+30/11/2020
+14:20	30/11/2020	Câmbio Instantâneo : R$99.62	U$ 18,05	U$ 18,05
+14:32	02/12/2020	Corretagem PYPL	-U$ 1,00	U$ 17,05
+14:32	02/12/2020	Compra de 0.047 PYPL a $ 212.14	-U$ 9,97	U$ 7,08
+14:32	02/12/2020	Compra de 0.0285 PYPL a $ 212.19	-U$ 6,05	U$ 1,03
+14:32	02/12/2020	Corretagem PYPL	-U$ 1,00	U$ 0,03
+03/12/2020
+17:15	04/12/2020	Câmbio Padrão : R$99.62	U$ 19,02	U$ 19,05
+04/12/2020
+11:33	08/12/2020	Corretagem SRC	-U$ 1,00	U$ 18,05
+11:33	08/12/2020	Compra de 0.4692 SRC a $ 38.27	-U$ 17,96	U$ 0,09
+16/12/2020
+10:05	16/12/2020	Câmbio Instantâneo : R$99.63	U$ 19,02	U$ 19,11
+11:34	18/12/2020	Compra de 0.2661 WPC a $ 71.47	-U$ 19,02	U$ 0,09
+18/12/2020
+11:33	18/12/2020	Câmbio Instantâneo : R$189.63	U$ 36,23	U$ 36,32
+11:48	22/12/2020	Compra de 0.515 NHI a $ 70.21	-U$ 36,16	U$ 0,16
+21/12/2020
+11:31	21/12/2020	Câmbio Instantâneo : R$159.05	U$ 30,03	U$ 30,19
+11:33	23/12/2020	Compra de 0.0204 T a $ 29.04	-U$ 0,59	U$ 29,60
+11:33	23/12/2020	Compra de 1 T a $ 29.04	-U$ 29,04	U$ 0,56
+22/12/2020
+14:05	22/12/2020	Câmbio Instantâneo : R$125.52	U$ 23,72	U$ 24,28
+14:07	24/12/2020	Compra de 0.1726 WPC a $ 69.82	-U$ 12,05	U$ 12,23
+14:07	24/12/2020	Compra de 0.306 SRC a $ 39.73	-U$ 12,16	U$ 0,07
+14:08	24/12/2020	Venda de 0.0755 PYPL a $ 240.9	U$ 18,19	U$ 18,26
+14:10	24/12/2020	Compra de 0.1568 T a $ 28.57	-U$ 4,48	U$ 13,78
+14:10	24/12/2020	Compra de 0.1127 SRC a $ 39.77	-U$ 4,48	U$ 9,30
+14:10	24/12/2020	Compra de 0.064 WPC a $ 69.76	-U$ 4,46	U$ 4,84
+14:11	24/12/2020	Compra de 0.1687 T a $ 28.57	-U$ 4,82	U$ 0,02
+28/12/2020
+09:16	28/12/2020	Câmbio Instantâneo : R$62.76	U$ 11,83	U$ 11,85
+11:47	30/12/2020	Corretagem OKE	-U$ 1,00	U$ 10,85
+11:47	30/12/2020	Compra de 0.2756 OKE a $ 38.92	-U$ 10,73	U$ 0,12
+29/12/2020
+11:36	29/12/2020	Câmbio Instantâneo : R$28.21	U$ 5,31	U$ 5,43
+11:40	31/12/2020	Compra de 0.114 OKE a $ 38.57	-U$ 4,40	U$ 1,03
+11:40	31/12/2020	Corretagem OKE	-U$ 1,00	U$ 0,03
+19/01/2021
+03:59	19/01/2021	Dividendos WPC. WPC dividend, $1.046/share	U$ 0,53	U$ 0,56
+03:59	19/01/2021	Retenção Impostos sobre Dividendos WPC. WPC tax, 30% withheld	-U$ 0,16	U$ 0,40
+03:59	19/01/2021	Dividendos SRC. SRC dividend, $0.625/share	U$ 0,55	U$ 0,95
+03:59	19/01/2021	Retenção Impostos sobre Dividendos SRC. SRC tax, 30% withheld	-U$ 0,17	U$ 0,78
+27/01/2021
+16:25	28/01/2021	Câmbio Padrão : R$47.04	U$ 8,54	U$ 9,32
+28/01/2021
+10:22	28/01/2021	Câmbio Instantâneo : R$39.51	U$ 7,08	U$ 16,40
+11:45	01/02/2021	Compra de 1 WES a $ 14.95	-U$ 14,95	U$ 1,45
+11:45	01/02/2021	Compra de 0.0555 WES a $ 14.95	-U$ 0,83	U$ 0,62
+01/02/2021
+05:59	01/02/2021	Dividendos NHI. NHI dividend, $1.1025/share	U$ 0,57	U$ 1,19
+05:59	01/02/2021	Retenção Impostos sobre Dividendos NHI. NHI tax, 30% withheld	-U$ 0,17	U$ 1,02
+02/02/2021
+03:45	02/02/2021	Dividendos T. T dividend, $0.52/share	U$ 0,70	U$ 1,72
+03:55	02/02/2021	Retenção Impostos sobre Dividendos T. T tax, 30% withheld	-U$ 0,21	U$ 1,51
+10:32	02/02/2021	Câmbio Instantâneo : R$498.11	U$ 90,07	U$ 91,58
+11:46	04/02/2021	Compra de 1 KO a $ 48.82	-U$ 48,82	U$ 42,76
+11:46	04/02/2021	Compra de 0.8677 KO a $ 48.82	-U$ 42,36	U$ 0,40
+11:59	04/02/2021	Venda de 0.8879 SRC a $ 39.01	U$ 34,64	U$ 35,04
+12:01	04/02/2021	Compra de 0.7633 XOM a $ 45.71	-U$ 34,89	U$ 0,15
+04/02/2021
+12:02	08/02/2021	Venda de 0.3896 OKE a $ 42.84	U$ 16,69	U$ 16,84
+12:03	08/02/2021	Compra de 0.6867 MPLX a $ 24.31	-U$ 16,69	U$ 0,15
+05/02/2021
+11:49	09/02/2021	Venda de 1 T a $ 28.97	U$ 28,97	U$ 29,12
+11:49	09/02/2021	Venda de 0.3459 T a $ 28.97	U$ 10,02	U$ 39,14
+12:01	09/02/2021	Venda de 1 WES a $ 16.2	U$ 16,20	U$ 55,34
+12:01	09/02/2021	Venda de 0.0555 WES a $ 16.2	U$ 0,90	U$ 56,24
+12:15	09/02/2021	Compra de 0.263 MCD a $ 212.13	-U$ 55,79	U$ 0,45
+10/02/2021
+11:45	12/02/2021	Venda de 0.7633 XOM a $ 51.39	U$ 39,23	U$ 39,68
+11:48	12/02/2021	Compra de 0.1445 FB a $ 272.17	-U$ 39,33	U$ 0,35
+16/02/2021
+02:28	16/02/2021	Dividendos MPLX. MPLX return-of-capital, $0.6875/share	U$ 0,47	U$ 0,82
+02:30	16/02/2021	Dividendos OKE. OKE dividend, $0.935/share	U$ 0,36	U$ 1,18
+02:30	16/02/2021	Retenção Impostos sobre Dividendos OKE. OKE tax, 30% withheld	-U$ 0,11	U$ 1,07
+02:30	16/02/2021	Dividendos WES. WES return-of-capital, $0.311/share	U$ 0,33	U$ 1,40
+19/02/2021
+16:58	23/02/2021	Venda de 1 KO a $ 50.1	U$ 50,10	U$ 51,50
+16:58	23/02/2021	Venda de 0.8677 KO a $ 50.1	U$ 43,47	U$ 94,97
+16:58	23/02/2021	Corretagem KO	-U$ 1,00	U$ 93,97
+16:59	23/02/2021	Venda de 0.263 MCD a $ 213.47	U$ 56,14	U$ 150,11
+16:59	23/02/2021	Corretagem MCD	-U$ 1,00	U$ 149,11
+16:59	23/02/2021	Corretagem FB	-U$ 1,00	U$ 148,11
+16:59	23/02/2021	Venda de 0.1445 FB a $ 261.52	U$ 37,79	U$ 185,90
+17:06	23/02/2021	Compra de 0.6841 IEP a $ 65.4	-U$ 44,74	U$ 141,16
+17:06	23/02/2021	Corretagem IEP	-U$ 1,00	U$ 140,16
+17:06	23/02/2021	Compra de 1 GLPI a $ 43.17	-U$ 43,17	U$ 96,99
+17:06	23/02/2021	Compra de 0.0367 GLPI a $ 43.17	-U$ 1,58	U$ 95,41
+17:06	23/02/2021	Corretagem GLPI	-U$ 1,00	U$ 94,41
+17:06	23/02/2021	Corretagem IIPR	-U$ 1,00	U$ 93,41
+17:06	23/02/2021	Compra de 0.2078 IIPR a $ 215.31	-U$ 44,74	U$ 48,67
+17:07	23/02/2021	Compra de 2 BPY a $ 17.87	-U$ 35,74	U$ 12,93
+17:07	23/02/2021	Corretagem BPY	-U$ 1,00	U$ 11,93
+17:07	23/02/2021	Compra de 0.6504 BPY a $ 17.87	-U$ 11,62	U$ 0,31
+24/02/2021
+10:11	24/02/2021	Câmbio Instantâneo : R$59.7	U$ 10,77	U$ 11,08
+11:32	26/02/2021	Compra de 0.9247 BRMK a $ 10.81	-U$ 10,00	U$ 1,08
+11:32	26/02/2021	Corretagem BRMK	-U$ 1,00	U$ 0,08
+25/02/2021
+13:14	25/02/2021	Câmbio Instantâneo : R$298.86	U$ 52,90	U$ 52,98
+13:20	01/03/2021	Compra de 1 ABR a $ 16.56	-U$ 16,56	U$ 36,42
+13:20	01/03/2021	Compra de 0.1128 ABR a $ 16.56	-U$ 1,87	U$ 34,55
+13:20	01/03/2021	Corretagem ABR	-U$ 1,00	U$ 33,55
+13:20	01/03/2021	Compra de 2 ABR a $ 16.56	-U$ 33,12	U$ 0,43
+14:50	26/02/2021	Câmbio Padrão : R$199.24	U$ 35,43	U$ 35,86
+26/02/2021
+11:54	02/03/2021	Compra de 0.4562 NEE a $ 75.02	-U$ 34,22	U$ 1,64
+11:54	02/03/2021	Corretagem NEE	-U$ 1,00	U$ 0,64
+04/03/2021
+13:58	08/03/2021	Venda de 0.515 NHI a $ 71.38	U$ 36,76	U$ 37,40
+13:59	08/03/2021	Venda de 0.6867 MPLX a $ 25.98	U$ 17,84	U$ 55,24
+14:05	08/03/2021	Compra de 0.6287 GLPI a $ 43.84	-U$ 27,56	U$ 27,68
+14:09	08/03/2021	Compra de 1 TSLX a $ 22.1	-U$ 22,10	U$ 5,58
+14:09	08/03/2021	Compra de 0.2485 TSLX a $ 22.1	-U$ 5,49	U$ 0,09
+11/03/2021
+02:35	11/03/2021	Dividendos XOM. XOM dividend, $0.87/share	U$ 0,66	U$ 0,75
+02:37	11/03/2021	Retenção Impostos sobre Dividendos XOM. XOM tax, 30% withheld	-U$ 0,20	U$ 0,55
+15/03/2021
+11:35	15/03/2021	Câmbio Instantâneo : R$49.81	U$ 8,62	U$ 9,17
+11:47	17/03/2021	Compra de 0.121 NEE a $ 75.59	-U$ 9,15	U$ 0,02
+16/03/2021
+02:06	16/03/2021	Dividendos BRMK. BRMK dividend, $0.07/share	U$ 0,06	U$ 0,08
+02:06	16/03/2021	Retenção Impostos sobre Dividendos BRMK. BRMK tax, 30% withheld	-U$ 0,02	U$ 0,06
+22/03/2021
+01:22	22/03/2021	Retenção Impostos sobre Dividendos ABR. ABR tax, 30% withheld	-U$ 0,31	-U$ 0,25
+01:22	22/03/2021	Dividendos ABR. ABR dividend, $0.33/share	U$ 1,03	U$ 0,78
+24/03/2021
+01:22	24/03/2021	Retenção Impostos sobre Dividendos GLPI. GLPI tax, 30% withheld	-U$ 0,32	U$ 0,46
+01:22	24/03/2021	Dividendos GLPI. GLPI dividend, $0.65/share	U$ 1,08	U$ 1,54
+10:50	26/03/2021	Compra de 0.1419 BRMK a $ 10.62	-U$ 1,51	U$ 0,03
+26/03/2021
+10:56	26/03/2021	Câmbio Instantâneo : R$18.02	U$ 3,09	U$ 3,12
+10:57	30/03/2021	Compra de 0.1495 TSLX a $ 20.71	-U$ 3,10	U$ 0,02
+05/04/2021
+11:27	07/04/2021	Venda de 0.0131 NEE a $ 77.04	U$ 1,01	U$ 1,03
+11:28	07/04/2021	Compra de 0.0181 IEP a $ 56.65	-U$ 1,03	U$ 0,00
+08/04/2021
+04:32	08/04/2021	Dividendos BPY. BPY return-of-capital, $0.2386/share	U$ 0,63	U$ 0,63
+05:13	08/04/2021	Dividendos BPY. BPY dividend, $0.0252/share	U$ 0,07	U$ 0,70
+05:22	08/04/2021	Dividendos BPY. BPY dividend, $0.0677/share	U$ 0,18	U$ 0,88
+09/04/2021
+04:14	09/04/2021	Dividendos TSLX. TSLX dividend, $1.25/share	U$ 1,56	U$ 2,44
+04:27	09/04/2021	Retenção Impostos sobre Dividendos TSLX. TSLX tax, 30% withheld	-U$ 0,47	U$ 1,97
+11:44	13/04/2021	Compra de 0.1839 BRMK a $ 10.66	-U$ 1,96	U$ 0,01
+15:25	12/04/2021	Câmbio Padrão : R$149.43	U$ 25,84	U$ 25,85
+12/04/2021
+10:40	14/04/2021	Compra de 1 AGNC a $ 17.13	-U$ 17,13	U$ 8,72
+10:40	14/04/2021	Compra de 0.5077 AGNC a $ 17.13	-U$ 8,70	U$ 0,02
+14/04/2021
+14:37	16/04/2021	Venda de 0.0156 NEE a $ 78.97	U$ 1,23	U$ 1,25
+14:37	16/04/2021	Venda de 0.072 GLPI a $ 45.23	U$ 3,26	U$ 4,51
+14:37	16/04/2021	Compra de 0.2922 HMLP a $ 15.32	-U$ 4,48	U$ 0,03
+16/04/2021
+08:37	16/04/2021	Dividendos BRMK. BRMK dividend, $0.07/share	U$ 0,07	U$ 0,10
+09:11	16/04/2021	Retenção Impostos sobre Dividendos BRMK. BRMK tax, 30% withheld	-U$ 0,02	U$ 0,08
+09:12	16/04/2021	Dividendos IIPR. IIPR dividend, $1.32/share	U$ 0,27	U$ 0,35
+09:12	16/04/2021	Retenção Impostos sobre Dividendos IIPR. IIPR tax, 30% withheld	-U$ 0,08	U$ 0,27
+09:17	16/04/2021	Retenção Impostos sobre Dividendos TSLX. TSLX tax, 30% withheld	-U$ 0,15	U$ 0,12
+09:17	16/04/2021	Dividendos TSLX. TSLX dividend, $0.41/share	U$ 0,51	U$ 0,63
+09:18	16/04/2021	Dividendos WPC. WPC dividend, $1.048/share	U$ 0,53	U$ 1,16
+09:27	16/04/2021	Retenção Impostos sobre Dividendos WPC. WPC tax, 30% withheld	-U$ 0,16	U$ 1,00
+20/04/2021
+14:36	22/04/2021	Compra de 0.0672 PBFX a $ 14.32	-U$ 0,96	U$ 0,04
+23/04/2021
+11:16	27/04/2021	Venda de 0.0136 WPC a $ 73.52	U$ 1,00	U$ 1,04
+11:18	27/04/2021	Compra de 0.066 PBFX a $ 14.43	-U$ 0,95	U$ 0,09
+29/04/2021
+01:35	29/04/2021	Retenção Impostos sobre Dividendos IEP. IEP tax, 30% withheld	-U$ 0,41	-U$ 0,32
+01:40	29/04/2021	Dividendos IEP. IEP dividend, $2/share	U$ 1,37	U$ 1,05
+03/05/2021
+09:28	03/05/2021	Câmbio Instantâneo : R$2729.18	U$ 489,87	U$ 490,92
+10:36	05/05/2021	Compra de 0.3893 MSFT a $ 252.31	-U$ 98,22	U$ 392,70
+10:37	05/05/2021	Compra de 0.2152 AVGO a $ 458.02	-U$ 98,57	U$ 294,13
+10:38	05/05/2021	Compra de 0.633 JPM a $ 154.5	-U$ 97,80	U$ 196,33
+10:39	05/05/2021	Compra de 0.02827 AMZN a $ 3445.91	-U$ 97,42	U$ 98,91
+10:39	05/05/2021	Compra de 0.245 UNH a $ 402.61	-U$ 98,64	U$ 0,27
+16:03	05/05/2021	Venda de 0.5077 AGNC a $ 18.04	U$ 9,16	U$ 9,43
+16:03	05/05/2021	Venda de 1 AGNC a $ 18.04	U$ 18,04	U$ 27,47
+16:06	05/05/2021	Compra de 0.7745 PBFX a $ 15.44	-U$ 11,96	U$ 15,51
+16:06	05/05/2021	Compra de 1 PBFX a $ 15.44	-U$ 15,44	U$ 0,07
+06/05/2021
+10:26	06/05/2021	Câmbio Instantâneo : R$1034.16	U$ 189,39	U$ 189,46
+11:11	10/05/2021	Compra de 0.24213 ANTM a $ 391.15	-U$ 94,71	U$ 94,75
+11:18	10/05/2021	Compra de 0.52633 DIS a $ 180.02	-U$ 94,75	U$ 0,00
+10/05/2021
+10:37	10/05/2021	Câmbio Instantâneo : R$2689.79	U$ 502,42	U$ 502,42
+10:38	12/05/2021	Compra de 0.43408 V a $ 230.37	-U$ 100,00	U$ 402,42
+10:40	12/05/2021	Compra de 0.04284 GOOGL a $ 2311.33	-U$ 99,02	U$ 303,40
+10:40	12/05/2021	Corretagem GOOGL	-U$ 1,00	U$ 302,40
+10:42	12/05/2021	Corretagem FB	-U$ 1,00	U$ 301,40
+10:42	12/05/2021	Compra de 0.31843 FB a $ 310.93	-U$ 99,01	U$ 202,39
+10:42	12/05/2021	Corretagem CRM	-U$ 1,00	U$ 201,39
+10:42	12/05/2021	Compra de 0.46306 CRM a $ 213.77	-U$ 98,99	U$ 102,40
+10:45	12/05/2021	Corretagem AMGN	-U$ 1,00	U$ 101,40
+10:45	12/05/2021	Compra de 0.3857 AMGN a $ 256.65	-U$ 98,99	U$ 2,41
+11/05/2021
+06:30	11/05/2021	Retenção Impostos sobre Dividendos . ACCOUNT CONVERSION CASH	-U$ 0,14	U$ 2,27
+07:02	11/05/2021	Dividendos . ACCOUNT CONVERSION CASH	U$ 0,07	U$ 2,34
+11:11	11/05/2021	US Estorno Dividendos	-U$ 0,07	U$ 2,27
+11:21	11/05/2021	Estorno Impostos sobre Dividendos	U$ 0,14	U$ 2,41
