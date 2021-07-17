@@ -3,56 +3,38 @@ package model.entities;
 import java.io.Serializable;
 import java.util.Date;
 
-public class Trade implements Serializable {
+public class ReturnOfCapital implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	private Long id;
-	private String ticker;
-	private Double price;
-	private Double position;
-	private Double value;
 	private Date date;
-	private String operation;
+	private String ticker;
+	private Double value;
 	
-	public Trade() {
-		
+	public ReturnOfCapital() {
+
 	}
 	
-	public Trade(Long id, String ticker, Double price, Double position, Double value, Date date, String operation) {
+	public ReturnOfCapital(Long id, Date date, String ticker, Double value) {
 		super();
 		this.id = id;
-		this.ticker = ticker;
-		this.price = price;
-		this.position = position;
-		this.value = value;
 		this.date = date;
-		this.operation = operation;
+		this.ticker = ticker;
+		this.value = value;
 	}
 
 	public Long getId() {
 		return id;
 	}
 
-	public String getTicker() {
-		return ticker;
-	}
-
-	public Double getPrice() {
-		return price;
-	}
-
-	public Double getPosition() {
-		return position;
-	}
-
 	public Date getDate() {
 		return date;
 	}
 
-	public String getOperation() {
-		return operation;
+	public String getTicker() {
+		return ticker;
 	}
-	
+
 	public Double getValue() {
 		return value;
 	}
@@ -61,26 +43,14 @@ public class Trade implements Serializable {
 		this.id = id;
 	}
 
-	public void setTicker(String ticker) {
-		this.ticker = ticker;
-	}
-
-	public void setPrice(Double price) {
-		this.price = price;
-	}
-
-	public void setPosition(Double position) {
-		this.position = position;
-	}
-
 	public void setDate(Date date) {
 		this.date = date;
 	}
 
-	public void setOperation(String operation) {
-		this.operation = operation;
+	public void setTicker(String ticker) {
+		this.ticker = ticker;
 	}
-	
+
 	public void setValue(Double value) {
 		this.value = value;
 	}
@@ -101,7 +71,7 @@ public class Trade implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Trade other = (Trade) obj;
+		ReturnOfCapital other = (ReturnOfCapital) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
@@ -112,8 +82,7 @@ public class Trade implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Trade [id=" + id + ", ticker=" + ticker + ", price=" + price + ", position=" + position + ", value=" + value + ", date="
-				+ date + ", operation=" + operation + "]";
+		return "ReturnOfCapital [id=" + id + ", date=" + date + ", ticker=" + ticker + ", value=" + value + "]";
 	}
 	
 }

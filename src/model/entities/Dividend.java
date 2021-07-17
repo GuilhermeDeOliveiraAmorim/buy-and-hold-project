@@ -1,45 +1,88 @@
 package model.entities;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Dividend extends Ticker {
-	
-	private static Double dividendTax = 0.3;
-	
-	private Date receiptDate;
-	private Double dividendAmount;
-	
-	public Dividend(String ticker, String sector, String industry, Integer rating, Double currentPosition,
-			Double averagePrice, Double totalDividendsReceived, Date receiptDate, Double dividendAmount) {
-		super(ticker, sector, industry, rating, currentPosition, averagePrice, totalDividendsReceived);
-		this.receiptDate = receiptDate;
-		this.dividendAmount = dividendAmount;
-	}
+public class Dividend implements Serializable {
 
+	private static final long serialVersionUID = 1L;
+	private Long id;
+	private Date date;
+	private String ticker;
+	private Double value;
+	
 	public Dividend() {
-		
+
+	}
+	
+	public Dividend(Long id, Date date, String ticker, Double value) {
+		super();
+		this.id = id;
+		this.date = date;
+		this.ticker = ticker;
+		this.value = value;
 	}
 
-	public Date getReceiptDate() {
-		return receiptDate;
+	public Long getId() {
+		return id;
 	}
 
-	public void setReceiptDate(Date receiptDate) {
-		this.receiptDate = receiptDate;
+	public Date getDate() {
+		return date;
 	}
 
-	public Double getDividendAmount() {
-		return dividendAmount;
+	public String getTicker() {
+		return ticker;
 	}
 
-	public void setDividendAmount(Double dividendAmount) {
-		double cut = dividendAmount * dividendTax;
-		this.dividendAmount = dividendAmount - cut;
+	public Double getValue() {
+		return value;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+	public void setTicker(String ticker) {
+		this.ticker = ticker;
+	}
+
+	public void setValue(Double value) {
+		this.value = value;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Dividend other = (Dividend) obj;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		return true;
 	}
 
 	@Override
 	public String toString() {
-		return "Dividend [receiptDate=" + receiptDate + ", dividendAmount=" + dividendAmount + "]";
+		return "Dividend [id=" + id + ", date=" + date + ", ticker=" + ticker + ", value=" + value + "]";
 	}
 	
 }

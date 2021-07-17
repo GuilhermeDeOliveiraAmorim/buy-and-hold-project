@@ -13,7 +13,7 @@ public class AvenueData {
 	}
 
 	public BufferedReader getAvenueData() throws UnsupportedEncodingException, FileNotFoundException {
-		BufferedReader avenueData = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\Users\\guilh\\Desktop\\DADOS.txt"), "UTF-8"));
+		BufferedReader avenueData = new BufferedReader(new InputStreamReader(new FileInputStream("D:\\workspace_java\\buy-and-hold-project\\data\\avenue_data.txt"), "UTF-8"));
 		return avenueData;
 	}
 
