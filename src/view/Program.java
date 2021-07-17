@@ -3,15 +3,21 @@ package view;
 import java.io.IOException;
 import java.text.ParseException;
 
-import model.avenue.Teste;
+import model.avenue.Util;
 
 public class Program {
 
 	public static void main(String[] args) throws ParseException, IOException {
 		
-		Teste teste = new Teste();
+		Util util = new Util();
 		
-		teste.writingDatabase();
+		System.out.println(util.allTrades());
+		
+		System.out.println(util.allDividend());
+		
+		System.out.println(util.allReturnOfCapitals());
+		
+		System.out.println(util.allBrokerageFee());
 		
 	}
 
